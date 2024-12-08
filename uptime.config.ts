@@ -21,13 +21,13 @@ const workerConfig = {
       // `id` should be unique, history will be kept if the `id` remains constant
       id: 'index',
       // `name` is used at status page and callback message
-      name: 'My Index Page',
+      name: '首页',
       // `method` should be a valid HTTP Method
       method: 'GET',
       // `target` is a valid URL
       target: 'https://hanson.us.kg',
       // [OPTIONAL] `tooltip` is ONLY used at status page to show a tooltip
-      tooltip: 'This is my Index Page',
+      tooltip: '这是我的首页',
       // [OPTIONAL] `statusPageLink` is ONLY used for clickable link at status page
       statusPageLink: 'https://hanson.us.kg',
       // [OPTIONAL] `expectedCodes` is an array of acceptable HTTP response codes, if not specified, default to 2xx
@@ -47,6 +47,28 @@ const workerConfig = {
       // refer to docs https://github.com/lyc8503/UptimeFlare/wiki/Geo-specific-checks-setup before setting this value
       //checkLocationWorkerRoute: 'https://hanson.us.kg',
     },
+    {
+      // `id` should be unique, history will be kept if the `id` remains constant
+      id: 'home-lite',
+      // `name` is used at status page and callback message
+      name: '个人网站主页(Lite)',
+      // `method` should be a valid HTTP Method
+      method: 'GET',
+      // `target` is a valid URL
+      target: 'https://home.hanson.us.kg',
+      // [OPTIONAL] `tooltip` is ONLY used at status page to show a tooltip
+      tooltip: '个人网站主页',
+      // [OPTIONAL] `statusPageLink` is ONLY used for clickable link at status page
+      statusPageLink: 'https://home.hanson.us.kg',
+      // [OPTIONAL] `expectedCodes` is an array of acceptable HTTP response codes, if not specified, default to 2xx
+      expectedCodes: [200],
+      // [OPTIONAL] `timeout` in millisecond, if not specified, default to 10000
+      timeout: 10000,
+      // [OPTIONAL] headers to be sent
+      headers: {
+        'User-Agent': 'Uptimeflare',
+      //  Authorization: 'Bearer YOUR_TOKEN_HERE',
+      },
     // Example TCP Monitor
     {
       id: 'test_tcp_monitor',
