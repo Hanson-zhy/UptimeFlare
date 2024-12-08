@@ -3,9 +3,9 @@ const pageConfig = {
   title: "lyc8503's Status Page",
   // Links shown at the header of your status page, could set `highlight` to `true`
   links: [
-    { link: 'https://github.com/lyc8503', label: 'GitHub' },
-    { link: 'https://blog.lyc8503.net/', label: 'Blog' },
-    { link: 'mailto:me@lyc8503.net', label: 'Email Me', highlight: true },
+    { link: 'https://github.com/Hanson-zhy', label: 'GitHub' },
+    { link: 'https://blog.hanson.us.kg/', label: 'Blog' },
+    { link: 'mailto:message@hanson.us.kg', label: 'Email Me', highlight: true },
   ],
 }
 
@@ -19,17 +19,17 @@ const workerConfig = {
     // Example HTTP Monitor
     {
       // `id` should be unique, history will be kept if the `id` remains constant
-      id: 'foo_monitor',
+      id: 'index',
       // `name` is used at status page and callback message
-      name: 'My API Monitor',
+      name: 'My Index Page',
       // `method` should be a valid HTTP Method
       method: 'POST',
       // `target` is a valid URL
-      target: 'https://example.com',
+      target: 'https://www.hanson.us.kg',
       // [OPTIONAL] `tooltip` is ONLY used at status page to show a tooltip
-      tooltip: 'This is a tooltip for this monitor',
+      tooltip: 'This is my Index Page',
       // [OPTIONAL] `statusPageLink` is ONLY used for clickable link at status page
-      statusPageLink: 'https://example.com',
+      statusPageLink: 'https://www.hanson.us.kg',
       // [OPTIONAL] `expectedCodes` is an array of acceptable HTTP response codes, if not specified, default to 2xx
       expectedCodes: [200],
       // [OPTIONAL] `timeout` in millisecond, if not specified, default to 10000
