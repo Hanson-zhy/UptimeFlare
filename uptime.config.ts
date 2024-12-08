@@ -23,7 +23,7 @@ const workerConfig = {
       // `name` is used at status page and callback message
       name: 'My Index Page',
       // `method` should be a valid HTTP Method
-      method: 'POST',
+      method: 'GET',
       // `target` is a valid URL
       target: 'https://hanson.us.kg',
       // [OPTIONAL] `tooltip` is ONLY used at status page to show a tooltip
@@ -37,7 +37,7 @@ const workerConfig = {
       // [OPTIONAL] headers to be sent
       headers: {
         'User-Agent': 'Uptimeflare',
-        Authorization: 'Bearer YOUR_TOKEN_HERE',
+      //  Authorization: 'Bearer YOUR_TOKEN_HERE',
       },
       // [OPTIONAL] body to be sent
       //body: 'Online!',
